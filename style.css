@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    height: 80vh;
+}
+
+.mian_credit {
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    padding: 16px;
+    width: 450px;
+    height: auto;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgb(16, 16, 16);
+    margin: 120px auto;
+    border-radius: 20px;
+    animation: float ease 2s infinite normal;
+}
+
+.mian_credit>h1 {
+    font-size: 26px;
+    color: #1f2937;
+    margin: 0 0 20px 50px;
+}
+
+#Cardholder {
+    font-size: 16px;
+    color: #4b5563;
+    margin-bottom: 10px;
+}
+
+#Cardholder>input {
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    color: #4b5563;
+}
+
+#Cardholder>input:focus {
+    outline: none;
+}
+
+#Cardholder>input::placeholder {
+    font-size: 16px;
+    color: #4b5563;
+}
+
+
+
+#cardnumber {
+    font-size: 16px;
+    color: #4b5563;
+    margin-bottom: 10px;
+}
+
+#cardnumber>input {
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    color: #4b5563;
+}
+
+#cardnumber>input:focus {
+    outline: none;
+}
+
+#cardnumber>input::placeholder {
+    font-size: 16px;
+    color: #4b5563;
+}
+
+#expiry {
+    font-size: 16px;
+    color: #4b5563;
+    margin-bottom: 10px;
+}
+
+#expiry>input {
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    color: #4b5563;
+}
+
+
+
+#CVv {
+    font-size: 16px;
+    color: #4b5563;
+    margin-bottom: 10px;
+}
+
+#CVv>input {
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    color: #4b5563;
+}
+
+#CVv>input:focus {
+    outline: none;
+}
+
+#CVv>input::placeholder {
+    font-size: 16px;
+    color: #4b5563;
+}
+
+.mian_credit>button {
+    margin-left: 160px;
+    padding: 10px;
+    border: 1px solid rgb(176, 176, 175);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    color: #4b5563;
+    box-shadow: 0 0 10px rgb(164, 163, 163);
+}
+
+.mian_credit>button:hover {
+    transform: scale(1.05);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 320px) {
+    .mian_credit {
+        width: 300px;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .mian_credit>h1 {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+    #Cardholder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    #Cardholder>input {
+        font-size: 14px;
+    }
+
+    #Cardholder>input::placeholder {
+        font-size: 14px;
+    }
+
+    #cardnumber {
+        font-size: 14px;
+    }
+
+    #cardnumber>input {
+        font-size: 14px;
+    }
+
+    #cardnumber>input::placeholder {
+        font-size: 14px;
+    }
+
+    #expiry {
+        font-size: 14px;
+    }
+
+    #expiry>input {
+        font-size: 14px;
+    }
+
+    #CVv {
+        font-size: 14px;
+    }
+
+    #CVv>input {
+        font-size: 14px;
+    }
+
+    #CVv>input::placeholder {
+        font-size: 14px;
+    }
+
+    .mian_credit>button {
+        padding: 10px;
+        font-size: 14px;
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (min-width: 321px)  and (max-width: 376px){
+    .mian_credit {
+        width: 320px;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .mian_credit>h1 {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    #Cardholder {
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+        justify-content: center;
+    }
+
+    #Cardholder>input {
+        font-size: 15px;
+    }
+
+    #Cardholder>input::placeholder {
+        font-size: 15px;
+    }
+
+    #cardnumber {
+        font-size: 15px;
+    }
+
+    #cardnumber>input {
+        font-size: 15px;
+    }
+
+    #cardnumber>input::placeholder {
+        font-size: 15px;
+    }
+
+    #expiry {
+        font-size: 15px;
+    }
+
+    #expiry>input {
+        font-size: 15px;
+    }
+
+    #CVv {
+        font-size: 15px;
+    }
+
+    #CVv>input {
+        font-size: 15px;
+    }
+
+    #CVv>input::placeholder {
+        font-size: 15px;
+    }
+
+    .mian_credit>button {
+        padding: 12px;
+        font-size: 15px;
+        margin-left: 100px;
+    }
+}
+@media only screen and (min-width: 377px) and (max-width: 426px)
+{
+    .mian_credit{
+        width: 400px;
+    }
+}
